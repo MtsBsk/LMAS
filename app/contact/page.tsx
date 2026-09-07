@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-      <p className="text-sm text-lantern">Contact</p>
-      <h1 className="mt-2 max-w-lg font-heading text-3xl font-medium sm:text-4xl">
+      <span className="block size-2.5 bg-lantern" />
+      <h1 className="mt-3 max-w-lg font-heading text-3xl font-medium sm:text-4xl">
         Parlons-en.
       </h1>
       <p className="mt-4 max-w-xl text-muted-foreground">

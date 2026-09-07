@@ -26,8 +26,11 @@ const impacts = [
 export default function DonsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-      <p className="text-sm text-lantern">Faire un don</p>
-      <h1 className="mt-2 max-w-lg font-heading text-3xl font-medium sm:text-4xl">
+      <div className="flex gap-1.5">
+        <span className="size-2.5 bg-lantern" />
+        <span className="size-2.5 bg-terrain" />
+      </div>
+      <h1 className="mt-3 max-w-lg font-heading text-3xl font-medium sm:text-4xl">
         Un don, deux terrains d’action.
       </h1>
       <p className="mt-4 max-w-xl text-muted-foreground">
@@ -47,15 +50,15 @@ export default function DonsPage() {
         ))}
       </div>
 
-      <div className="mt-10 flex flex-col items-start gap-3 rounded-xl border border-border/70 p-6">
+      <div className="mt-10 flex flex-col items-start gap-3 bg-ink px-6 py-6 text-ink-foreground">
         <Button
           size="lg"
           render={<Link href="#" />} nativeButton={false}
-          className="bg-lantern text-lantern-foreground hover:bg-lantern/85"
+          className="rounded-sm bg-lantern text-lantern-foreground hover:bg-lantern/85"
         >
           Faire un don en ligne
         </Button>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-xs text-ink-foreground/60">
           Paiement sécurisé via notre plateforme de collecte (lien à
           connecter par l’association, par exemple HelloAsso).
         </p>

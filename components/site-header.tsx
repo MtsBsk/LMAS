@@ -27,7 +27,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="font-heading text-xl font-medium">
+        <Link href="/" className="flex items-center gap-2 font-heading text-xl font-medium">
+          <span className="size-2.5 bg-lantern" />
           LMAS
         </Link>
 
@@ -49,7 +50,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden md:block">
-          <Button render={<Link href="/dons" />} nativeButton={false} className="bg-lantern text-lantern-foreground hover:bg-lantern/85">
+          <Button render={<Link href="/dons" />} nativeButton={false} className="rounded-sm bg-lantern text-lantern-foreground hover:bg-lantern/85">
             Faire un don
           </Button>
         </div>

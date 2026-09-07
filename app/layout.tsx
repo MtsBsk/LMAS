@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Fraunces, Geist, Geist_Mono } from "next/font/google"
+import { Fraunces, Work_Sans } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -8,12 +8,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { Toaster } from "@/components/ui/sonner"
 import { cn } from "@/lib/utils";
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+const workSans = Work_Sans({ subsets: ["latin"], variable: "--font-sans" })
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -38,9 +33,8 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         "antialiased",
-        fontMono.variable,
         "font-sans",
-        geist.variable,
+        workSans.variable,
         fraunces.variable
       )}
     >
